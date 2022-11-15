@@ -7,9 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CriarPensamentoComponent implements OnInit {
 
+  //Property Biding
+  pensamento = {
+    id: '1',
+    conteudo: 'Aprendendo Angular',
+    autoria: 'Dev',
+    modelo: ''
+}
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+
+  // Event Biding
+  criarPensamento(){
+    alert("Pensamento criado!");
+  }
+
+  cancelarPensamento(){
+    alert("Pensamento cancelado!");
+  }
 }
